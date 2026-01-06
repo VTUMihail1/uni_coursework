@@ -12,7 +12,7 @@ def can_crawl(url, user_agent):
 
 def save_to_csv(data, filename="data.csv"):
     BASE_DIR = Path(__file__).resolve().parent.parent
-    DATA_DIR = BASE_DIR / "data"
+    DATA_DIR = BASE_DIR / "uni_coursework\data"
     DATA_DIR.mkdir(exist_ok=True)
     CSV_PATH = DATA_DIR / filename
 

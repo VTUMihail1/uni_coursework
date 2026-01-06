@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+
+# Virtual environment
+env/
+
+
+# Data folder
+data/
+
+
+# VS Code settings
+.vscode/
+
+
+# Mac/Linux
+.DS_Store
+*.swp
