@@ -1,7 +1,7 @@
 from urllib.robotparser import RobotFileParser
 from urllib.parse import urljoin
 import pandas as pd
-from pathlib import Path
+from config import BASE_FILE_PATH
 
 def can_crawl(url, user_agent):
     robots_url = urljoin(url, "/robots.txt")
@@ -11,9 +11,9 @@ def can_crawl(url, user_agent):
     return rp.can_fetch(user_agent, url)
 
 def save_to_csv(data, filename="data.csv"):
-    BASE_DIR = Path(__file__).resolve().parent.parent
-    DATA_DIR = BASE_DIR / "uni_coursework\data"
+    DATA_DIR = BASE_FILE_PATH / "data"
     DATA_DIR.mkdir(exist_ok=True)
+
     CSV_PATH = DATA_DIR / filename
 
     df = pd.DataFrame(data)
