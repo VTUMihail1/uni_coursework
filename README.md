@@ -16,8 +16,9 @@
 ## Настройка и стартиране локално
 1. Клонирайте репозитория:
    git clone https://github.com/VTUMihail1/uni_coursework.git
-2. Инсталирайте зависимостите директно чрез pip:
+2. Навигирай до папката cd uni_coursework
+3. Инсталирайте зависимостите директно чрез pip:
    pip install requests beautifulsoup4 pandas
-3. Стартирайте crawler-a:
+4. Стартирайте crawler-a:
    python src/crawler.py
-4. Проверете CSV файла в папката `data/` за резултати.
+5. Проверете CSV файла в папката `data/` за резултати.
